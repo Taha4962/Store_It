@@ -21,7 +21,7 @@ interface Props {
   avatar: string;
   fullName: string;
   email: string;
-  ownerId: string;
+  $id: string;
   accountId: string;
 }
 
@@ -29,7 +29,7 @@ const MobileNavigation = ({
   avatar,
   fullName,
   email,
-  ownerId,
+  $id: ownerId,
   accountId,
 }: Props) => {
   const [open, setOpen] = useState(false);
